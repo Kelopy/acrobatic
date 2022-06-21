@@ -1,7 +1,7 @@
 package me.kelopy.acrobatic.commands;
 
+import me.clip.placeholderapi.PlaceholderAPI;
 import me.kelopy.acrobatic.Acrobatic;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -19,7 +19,9 @@ public class ping implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
         if (sender instanceof Player p){
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("ping")));
+            String ping = plugin.getConfig().getString("ping");
+            ping = PlaceholderAPI.setPlaceholders(p, ping);
+            p.sendMessage(ping);
         } else {
             System.out.println("This command can only be executed by a player.");
         }

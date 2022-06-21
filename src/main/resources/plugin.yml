@@ -3,6 +3,7 @@ version: '${project.version}'
 main: me.kelopy.acrobatic.Acrobatic
 authors: [ Kelopy ]
 description: Acrobatic Lands Official Plugin
+depend: [PlaceholderAPI]
 commands:
   ping:
     description: pong
