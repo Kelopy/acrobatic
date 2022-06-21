@@ -1,0 +1,10 @@
+name: Acrobatic
+version: '${project.version}'
+main: me.kelopy.acrobatic.Acrobatic
+authors: [ Kelopy ]
+description: Acrobatic Lands Official Plugin
+commands:
+  ping:
+    description: pong
+    usage: /<command>
+    permission: acrobatic.ping
