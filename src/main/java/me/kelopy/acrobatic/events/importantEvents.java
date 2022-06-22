@@ -2,6 +2,7 @@ package me.kelopy.acrobatic.events;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 import me.kelopy.acrobatic.Acrobatic;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -25,10 +26,12 @@ public class importantEvents implements Listener {
             String joinMessage = plugin.getConfig().getString("player-join");
             joinMessage = PlaceholderAPI.setPlaceholders(player, joinMessage);
             event.setJoinMessage(joinMessage);
+            player.playSound(player.getLocation(), Sound.BLOCK_NOTE_PLING, 1.0f, 1.0f);
         }else{
             String firstJoinMessage = plugin.getConfig().getString("player-first-join");
             firstJoinMessage = PlaceholderAPI.setPlaceholders(player, firstJoinMessage);
             event.setJoinMessage(firstJoinMessage);
+            player.playSound(player.getLocation(), Sound.BLOCK_NOTE_PLING, 1.0f, 1.0f);
         }
 
     }

@@ -6,7 +6,12 @@ description: Acrobatic Lands Official Plugin
 depend: [PlaceholderAPI]
 commands:
   ping:
-    description: pong
+    description: Displays a user's ping
     usage: /<command> [player]
     permission: acrobatic.ping
+    permission-message: "§cYou don't have permission to execute this command."
+  vault:
+    description: Kelopy's special vault ;)
+    usage: /<command>
+    permission: acrobatic.vault
     permission-message: "§cYou don't have permission to execute this command."
