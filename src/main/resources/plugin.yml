@@ -9,3 +9,4 @@ commands:
     description: pong
     usage: /<command>
     permission: acrobatic.ping
+    permission-message: "§cYou don't have permission to execute this command."

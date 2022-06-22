@@ -1,1 +1,2 @@
 ping: "&7Ping &8» &c%player_ping%ms"
+ping-target: "&7%player_name%'s Ping &8» &c%player_ping%ms"
