@@ -7,6 +7,6 @@ depend: [PlaceholderAPI]
 commands:
   ping:
     description: pong
-    usage: /<command>
+    usage: /<command> [player]
     permission: acrobatic.ping
     permission-message: "§cYou don't have permission to execute this command."
